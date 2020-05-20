@@ -5,11 +5,8 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     burger.selectAll(data => {
-
-        console.log(data)
-
         const hbsObject = {
-            burger: data
+            burgers: data
         };
 
         console.log(`hbsObject: ${hbsObject}`)
