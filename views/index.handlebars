@@ -1,10 +1,12 @@
+{{!-- image ALT "Photo by Pablo Merchán Montes on Unsplash" --}}
+
 <h1>Burgers</h1>
 
 {{!-- burgers not devoured --}}
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    <li>{{id}} {{burger_name}}</li>
+    {{> burgers/burger-block}}
     {{/unless}}
     {{/each}}
 </ul>
