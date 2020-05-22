@@ -1,0 +1,28 @@
+/* max screen size 880px */
+
+@media only screen and (max-width: 921px) {
+    main {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .input-section {
+        margin-bottom: 40px;
+    }
+
+    #bgrs-not-eaten {
+        margin-bottom: 40px;
+    }
+
+    .burger-img {
+        opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}
