@@ -1,43 +1,50 @@
-{{!-- Header --}}
-<header>
-    <h1>Eat-Da-Burger</h1>
-</header>
+<main>
 
-{{!-- Input Section --}}
-<section class="input-section">
-    <h3>Enter A Burger You Want To Eat</h3>
-    <form action="">
-        <input type="text" class="input-box">
-        <button type="submit">Submit</button>
-    </form>
-</section>
+    {{!-- Header --}}
+    <header>
+        <h1>Eat-Da-Burger</h1>
+    </header>
 
-{{!-- Burgers To Eat Section --}}
-<section class="bgrs-not-eaten">
-    <h3>Burgers To Eat:</h3>
-    {{!-- burgers not devoured --}}
-    <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block}}
-        {{/unless}}
-        {{/each}}
-    </ul>
-</section>
+    {{!-- Input Section --}}
+    <section class="input-section">
+        <h3>Enter A Burger You Want To Eat</h3>
+        <form action="">
+            <input type="text" class="input-box">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-{{!-- Main Burger Image Section --}}
-<section class="burger-img">
-    <img src="/assets/img/burger-pic.jpg" alt="Photo by Pablo Merchán Montes on Unsplash">
-</section>
+    {{!-- Burgers To Eat Section --}}
+    <section id="bgrs-not-eaten" class="content-sections">
+        <h3>Burgers To Eat:</h3>
+        {{!-- burgers not devoured --}}
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </section>
 
-{{!-- Burgers Eaten Section --}}
-<section class="bgrs-eaten">
-    {{!-- burgers devoured --}}
-    <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        <li>{{id}} {{burger_name}}</li>
-        {{/if}}
-        {{/each}}
-    </ul>
-</section>
+    {{!-- Main Burger Image Section --}}
+    <section class="burger-img">
+        <img src="/assets/img/burger-pic.jpg" alt="Photo by Pablo Merchán Montes on Unsplash">
+    </section>
+
+    {{!-- Burgers Eaten Section --}}
+    <section id="bgrs-eaten" class="content-sections">
+        <h3>Burgers Devoured:</h3>
+        {{!-- burgers devoured --}}
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+                <p>{{id}}. {{burger_name}}</p>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </section>
+
+</main>

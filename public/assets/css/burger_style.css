@@ -1,6 +1,146 @@
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Sigmar One', cursive; */
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #101010;
+    color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "head head head"
+        ". Input ."
+        "NotEat IMG Eat";
+    grid-template-rows: 140px 200px 393px;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    width: 90%
+}
+
+header {
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
-    color: red;
+    color: #feba77;
+    font-family: 'Sigmar One', cursive, serif;
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.input-section {
+    grid-area: Input;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form button {
+    background-color: #feba77;
+    border-radius: 10px;
+    color: #101010;
+    font-size: 1.1em;
+    max-width: 100px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #f5cda5;
+}
+
+.input-box {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 50px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.content-sections {
+    border: 3px solid #feba77;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.content-sections h3 {
+    text-align: center;
+}
+
+.content-sections ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.content-sections ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.content-sections ul li p {
+    margin: 0;
+}
+
+#bgrs-not-eaten {
+    grid-area: NotEat;
+}
+
+.burger-btn {
+    background-color: #feba77;
+    border-radius: 5px;
+    font-size: 1em;
+    max-height: 33px;
+    max-width: 70px;
+    margin-left: 10px;
+    padding: 2px 0;
+    width: 100%;
+}
+
+.burger-btn:hover {
+    background-color: #f5cda5;
+}
+
+.burger-img {
+    grid-area: IMG;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-img img {
+    max-height: 393px;
+    height: 100%;
+}
+
+#bgrs-eaten {
+    grid-area: Eat;
 }

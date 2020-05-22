@@ -9,8 +9,6 @@ router.get("/", (req, res) => {
             burgers: data
         };
 
-        console.log(`hbsObject: ${hbsObject}`)
-
         res.render("index", hbsObject);
     });
 });
