@@ -4,7 +4,7 @@
 
 <img src="./dev_img/eat-da-burger.png" alt="Project Screenshot" max-height="400px">
 
-> This command line interface allows the user to view/add/update & delete department, employee roles & employees.
+> This application allows the user to log different hamburgers that the user would like to eat and also update the log when that burger has been eaten.
 
 #### [View The Site](#) - The project is not live.
 
@@ -39,7 +39,7 @@ By utilizing mysql, this application is able to store and retrieve data quickly 
 
 ![GitHub Top Language](https://img.shields.io/github/languages/top/nvalline/burger-logger) ![GitHub language count](https://img.shields.io/github/languages/count/nvalline/burger-logger)
 
-- Javascript, node.js, MYSQL
+- Javascript, node.js, MYSQL, Express.js, Handlebars, jQuery, HTML, CSS, MVC structure
 
 [Back To The Top](#project-name)
 
@@ -47,9 +47,7 @@ By utilizing mysql, this application is able to store and retrieve data quickly 
 
 ## Installation
 
-Download the source files to the desired project directory. Open the terminal and navigate to the directory in the last step. Simply enter 'npm install', to install the necessary dependencies.
-
-#### [View Video Walkthrough](https://youtu.be/JHmSoG2eL-M)
+Simply click the following link to load the application in your browser.
 
 #### [View The Site](#) - The project is not live.
 
@@ -60,8 +58,6 @@ Download the source files to the desired project directory. Open the terminal an
 ## How To Use
 
 Once the dependencies are installed, simply open the terminal and enter 'npm start'. This will launch the application. Follow the prompts that are presented in the terminal. Use the 'Enter/Return' key to submit the response to each prompt.
-
-#### [View Video Walkthrough](https://youtu.be/JHmSoG2eL-M)
 
 [Back To The Top](#project-name)
 
