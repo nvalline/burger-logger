@@ -2,7 +2,7 @@
 
 # Eat-Da-Burger!
 
-<img src="#" alt="Project Screenshot" max-height="400px">
+<img src="./dev_img/eat-da-burger.png" alt="Project Screenshot" max-height="400px">
 
 > This command line interface allows the user to view/add/update & delete department, employee roles & employees.
 
