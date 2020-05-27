@@ -16,7 +16,7 @@ main {
         "head head head"
         ". Input ."
         "NotEat IMG Eat";
-    grid-template-rows: 140px 200px 393px;
+    grid-template-rows: 140px 200px auto;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     width: 90%
@@ -133,7 +133,7 @@ form button:hover {
     grid-area: IMG;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     width: 100%;
 }
