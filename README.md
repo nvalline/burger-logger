@@ -6,7 +6,7 @@
 
 > This application allows the user to log different hamburgers that the user would like to eat and also update the log when that burger has been eaten.
 
-#### [View The Site](#) - The project is not live.
+#### [View The Site](https://powerful-springs-45034.herokuapp.com/) - The project is live.
 
 ---
 
@@ -25,11 +25,11 @@
 
 ## Description
 
-This command line interface utilizes node.js and mysql to provide the user with an application to create/view/update & delete department, employee roles & employees.  
+This application allows the user to log all the different hamburgers that he/she would like to eat. When the user devours one of the burgers, the user can click the button to indicate that they have eaten that burger.  
 
-The node interface provides a smooth user experience as it prompts the user through the different functionalities.  
+Utilizing a MYSQL database the application will retain the data entered and will deliver it back to the user when he/she returns.
 
-By utilizing mysql, this application is able to store and retrieve data quickly and accurately.  
+This application is also mobile responsive, which allows the user to utilize the application in real-time while they are devouring burgers (just like Popeye's friend, Wimpy)!
 
 [Back To The Top](#project-name)
 
@@ -49,7 +49,7 @@ By utilizing mysql, this application is able to store and retrieve data quickly 
 
 Simply click the following link to load the application in your browser.
 
-#### [View The Site](#) - The project is not live.
+#### [View The Site](https://powerful-springs-45034.herokuapp.com/) - The project is live.
 
 [Back To The Top](#project-name)
 
@@ -57,7 +57,9 @@ Simply click the following link to load the application in your browser.
 
 ## How To Use
 
-Once the dependencies are installed, simply open the terminal and enter 'npm start'. This will launch the application. Follow the prompts that are presented in the terminal. Use the 'Enter/Return' key to submit the response to each prompt.
+Once the application is loaded in the browser, simply enter a burger into the text field and click 'Submit'.  This will save the burger to the 'Burgers To Eat' section.
+
+Once the burger has been devoured, simply click the 'Eaten' button to update the status and move the burger to the 'Burgers Devoured' section.
 
 [Back To The Top](#project-name)
 
