@@ -39,7 +39,7 @@ By utilizing mysql, this application is able to store and retrieve data quickly 
 
 ![GitHub Top Language](https://img.shields.io/github/languages/top/nvalline/burger-logger) ![GitHub language count](https://img.shields.io/github/languages/count/nvalline/burger-logger)
 
-- Javascript, node.js, MYSQL, Express.js, Handlebars, jQuery, HTML, CSS, MVC structure
+- Javascript, node.js, MYSQL, Express.js, Handlebars, HTML, CSS, MVC structure
 
 [Back To The Top](#project-name)
 
