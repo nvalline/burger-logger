@@ -1,27 +1,27 @@
 // On submit add new burger
-$('#submit-btn').on('click', event => {
+const submitBtn = document.getElementById('submit-btn');
+const burgerName = document.getElementById('burger_name');
+let burgerBtns = document.querySelectorAll('.burger-btn');
+
+submitBtn.addEventListener('click', event => {
     event.preventDefault();
 
-    const newBurger = { "burger_name": $('#burger_name').val().trim() };
+    const newBurger = { "burger_name": burgerName.value.trim() };
 
-    $.ajax("/api/burger", {
-        type: "POST",
-        data: newBurger
-    })
-        .then(() => {
-            location.reload();
-        })
+    fetch("/api/burger", { method: "POST", body: JSON.stringify(newBurger), headers: { 'Content-Type': 'application/json' } })
+        .then(() => location.reload())
+        .catch(console.error)
 });
 
 // If 'Eaten' move to 'Devoured'
-$('.burger-btn').on('click', event => {
-    const targetBtn = event.target.dataset;
+burgerBtns.forEach((btn) => {
+    btn.addEventListener('click', event => {
+        const targetBtn = event.target.dataset;
 
-    $.ajax("/api/burger", {
-        type: "PUT",
-        data: targetBtn
-    })
-        .then(() => {
-            location.reload();
-        })
+        fetch("/api/burger", { method: "PUT", body: JSON.stringify(targetBtn), headers: { 'Content-Type': 'application/json' } })
+            .then(() => {
+                location.reload();
+            })
+            .catch(console.error)
+    });
 });
